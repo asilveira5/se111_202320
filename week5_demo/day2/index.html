@@ -28,7 +28,7 @@
 
     <h2>Form using a Table</h2>
 
-    <form method="GET" action="confirm.html">
+    <form method="GET" action="confirm.html"> <!--use in homework assignment -->
 
         <table>
 
@@ -133,19 +133,20 @@
 
                 <!--non text input elements-->
 
-                <!--select element creates a drop down menu-->
+                <!--select element creates a drop down menu - Limits to 1 response, limitless options; works similar to a list <ol> <ul> with <li>-->
 
                 <tr>
-
+                    <!--Left Column (LABELS)-->
                     <td>
 
                         <label for="faveColor">Pick Your Favorite Color: </label>
 
                     </td>
 
+                    <!--Right Column (Inpouts)-->
                     <td>
 
-                        <select name="faveColor">
+                        <select name="faveColor"> <!--creates drop down menu -->
 
                             <option value="red">Red</option>
 
@@ -153,7 +154,7 @@
 
                             <option value="yellow">Yellow</option>
 
-                            <option value="green">Green</option>
+                            <option value="green">Green</option>        <!--option in drop down menu-->
 
                             <option value="blue">Blue</option>
 
@@ -167,16 +168,16 @@
 
                 </tr>
 
-                <!--radio buttons: 'multiple choice' options, small circular buttons; can only ever choose ONE out of the set-->
+                <!--radio buttons: limited to 1 so long as all name values math'radio buttons are circular (think multiple choice answer on wuiz) 'multiple choice' options, small circular buttons; can only ever choose ONE out of the set-->
 
                 <tr>
-
+                    <!--Left Column(Labels)-->
                     <td>
 
                         <label for="study">Program of Study:</label>
 
                     </td>
-
+                    <!--Right Column(inputs)-->
                     <td>
 
                         <input type="radio" name="study" value="SE">Software Engineering <br>
@@ -185,20 +186,22 @@
 
                         <input type="radio" name="study" value="WD">Web Development <br>
 
+                        <input type="radio" name="study" valeu="NE">Networtking
+
                     </td>
 
                 </tr>
 
-                <!--checkboxes allow for multiple responses-->
+                <!--checkboxes - can select multiple options(scripy must be prepared for all) allow for multiple responses-->
 
                 <tr>
-
+                    <!--Left Column(Labels)-->
                     <td>
 
-                        <label for="vehicle">Select Your Vehicles</label>
+                        <label for="vehicle">Select Your Vehicle(s):</label>
 
                     </td>
-
+                    <!--Right Column(Inputs)-->
                     <td>
 
                         <input type="checkbox" name="vehicle1" value="car">Car <br>
@@ -216,18 +219,18 @@
                     </td>
 
                 </tr>
-
+                <!--DATE-->
                 <tr>
-
+                    <!--left Column(Label)-->
                     <td>
 
                         <label for="date">Date: </label>
 
                     </td>
-
+                    <!--Right Colum(Inputs)-->
                     <td>
 
-                        <input type="date" name="date">
+                        <input type="date" name="date" value="2023-12-07"> <!--value(assign date for curent date)-->
 
                     </td>
 
@@ -236,11 +239,11 @@
                 <!--submit button! must have for functionality!-->
 
                 <tr>
-
+                    <!--Left Column(Label)-->
                     <td>
 
                     </td>
-
+                    <!--Right Column(Inputs)-->
                     <td>
 
                         <input type="submit" value="SUBMIT">
