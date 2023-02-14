@@ -18,12 +18,17 @@
         var rate = Number(prompt("What is the rate of pay: "))
         var hours = Number(prompt("How many hours where worked: "))
         
+        console.log(rate, hours)
+
         //LOGIC
-        var tax = 0.02
+        var tax = 0.2
         var biWeekly = 2
         var gross = (rate * hours) * biWeekly
-        var taxAmnt = (gross * taxAmnt)
+        var taxAmnt = (gross * tax)
         var net = (gross - taxAmnt)
+
+
+
 
         //display to user
         alert(`Gross Amount: $${gross.toFixed(2)}`)
